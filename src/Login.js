@@ -45,12 +45,14 @@ function Login() {
                 <form>
                     <h5>E-mail <small>(Enter a valid email-id)</small></h5>
                     <input type='email' className='email' value={email} 
-                        onChange={e => setEmail(e.target.value)} 
+                        onChange={e => setEmail(e.target.value)}
+                        autocomplete='on'
                     />
 
                     <h5>Password</h5>
                     <input type='password' className='password' value={password}
                         onChange={e => setPassword(e.target.value)}
+                        autocomplete='on'
                     />
 
                     <button type='submit' className='signinButton' onClick={signIn}>Sign In</button>
